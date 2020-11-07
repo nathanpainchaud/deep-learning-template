@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "deep-learning-tutorials"
+version = "0.1.0"
+description = "Simple Deep Learning Tutorials using PyTorch Lightning and Hydra"
+authors = ["Nathan Painchaud <nathan.painchaud@gmail.com>"]
+readme = 'README.md'
+
+[tool.poetry.dependencies]
+python = "^3.8"
+torch = "^1.7.0"
+torchvision = "^0.8.1"
+pytorch-lightning = "^1.0.5"
+hydra-core = "^1.0.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pre-commit = "^2.8.2"
+isort = "^5.6.4"
+black = "^20.8b1"
+flake8 = "^3.8.4"
+flake8-docstrings = "^1.5.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ["py38"]
+exclude = "(.eggs|.git|.hg|.mypy_cache|.nox|.tox|.venv|.svn|_build|buck-out|build|dist)"
+
+[tool.isort]
+profile = "black"
+line_length = 120
+src_paths = ["deep_learning_tutorials"]
