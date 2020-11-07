@@ -3,6 +3,8 @@ name = "deep-learning-tutorials"
 version = "0.1.0"
 description = "Simple Deep Learning Tutorials using PyTorch Lightning and Hydra"
 authors = ["Nathan Painchaud <nathan.painchaud@gmail.com>"]
+license = "MIT"
+
 readme = 'README.md'
 
 [tool.poetry.dependencies]
