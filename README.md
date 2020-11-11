@@ -23,3 +23,6 @@ poetry install
 If you want to contribute to the project, then you have one to perform an additional setup step: installing the
 pre-commit hooks. This is done to ensure that any code committed to the repository meets the project's format and
 quality standards.
+```shell script
+pre-commit install
+```
