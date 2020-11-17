@@ -1,0 +1,58 @@
+defaults:
+  - task: ???
+  - model: ???
+  - datamodule: ???
+  - optimizers: adam
+  - trainer: debug
+  - loggers: local
+
+log: True
+logging:
+  train:
+    prog_bar: False
+  validation:
+    prog_bar: False
+
+##########
+# Required fields to be filled in by `task` config group
+##########
+task:
+  task:
+    _target_: ???
+
+##########
+# Required fields to be filled in by `model` config group
+##########
+model:
+  model:
+    _target_: ???
+  authorized_tasks:
+    - _target_: ???
+
+
+##########
+# Required fields to be filled in by `datamodule` config group
+##########
+datamodule:
+  datamodule:
+    _target_: ???
+  authorized_tasks:
+    - _target_: ???
+
+##########
+# Required fields to be filled in by `optimizers` config group
+##########
+optimizers:
+  optimizers:
+    - _target_: ???
+      name: "default" # Default to apply to `self`. Otherwise, optimizer is applied to the parameters of `self.{name}`
+
+
+##########
+# Required fields to be filled in by `trainer` config group
+##########
+trainer:
+  train: ???
+  test: ???
+  trainer:
+    _target_: ???

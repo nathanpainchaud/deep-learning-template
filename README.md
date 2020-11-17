@@ -19,6 +19,26 @@ Once you have a python interpreter and poetry setup, simply install the project'
 poetry install
 ```
 
+## Principal Command
+```shell script
+python run.py task=TASK model=MODEL datamodule=DATAMODULE
+```
+
+- `task` str: Task configuration to use for the run.
+- `model` str: Model configuration to use for the run.
+- `datamodule` str: Datamodule configuration to use for the run.
+
+Once you've provided the required parameters described above, you can see detailed help to change any other aspect of
+the configuration by running:
+```shell script
+python run.py task=TASK model=MODEL datamodule=DATAMODULE --help
+```
+
+## Basic Tutorial Command
+```shell script
+python run.py task=pixel_wise_autoencoding model=simple_ae datamodule=mnist
+```
+
 ## How to Contribute
 If you want to contribute to the project, then you have to install the pre-commit hooks, on top of the basic setup for
 using the project, detailed [above](#setup). The pre-commit hooks are there to ensure that any code committed to the
