@@ -23,5 +23,8 @@ jobs:
         with:
           python-version: 3.8
 
+      - name: Install pre-commit hooks local dependencies
+        run: pip install poetry
+
       - name: Install and run pre-commit hooks
         uses: pre-commit/action@v2.0.0
