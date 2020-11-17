@@ -6,6 +6,7 @@ defaults:
   - trainer: debug
   - loggers: local
 
+ckpt_path: False
 log: True
 logging:
   train:

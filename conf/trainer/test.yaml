@@ -1,0 +1,8 @@
+# @package _group_
+
+train: False
+test: True
+
+trainer:
+  _target_: pytorch_lightning.Trainer
+  gpus: 1
