@@ -1,4 +1,4 @@
-from deep_learning_tutorials import __version__
+from deep_learning_template import __version__
 
 
 def test_version():

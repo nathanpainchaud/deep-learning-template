@@ -1,0 +1,6 @@
+# @package _group_
+
+loggers:
+  - _target_: pytorch_lightning.loggers.comet.CometLogger
+    save_dir: "."
+    offline: True

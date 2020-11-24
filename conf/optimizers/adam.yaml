@@ -1,0 +1,5 @@
+# @package _group_
+
+optimizers:
+  - _target_: torch.optim.Adam
+    name: "default"

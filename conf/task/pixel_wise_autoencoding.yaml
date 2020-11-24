@@ -1,0 +1,6 @@
+# @package _group_
+
+task:
+  _target_: deep_learning_template.tasks.representation_learning.PixelWiseAutoencodingTask
+  loss:
+    _target_: torch.nn.MSELoss

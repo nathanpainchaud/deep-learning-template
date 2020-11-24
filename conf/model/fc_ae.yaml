@@ -1,0 +1,15 @@
+# @package _group_
+
+model:
+  _target_: deep_learning_template.models.autoencoder.FullyConnectedAutoencoder
+  num_latent_dims: 2
+  hidden_layers: [ 784 ]
+  bn:
+    _target_: torch.nn.BatchNorm1d
+  activation:
+    _target_: torch.nn.ReLU
+  dropout:
+    _target_: torch.nn.Dropout
+
+authorized_tasks:
+  - _target_: deep_learning_template.tasks.representation_learning.PixelWiseAutoencodingTask
