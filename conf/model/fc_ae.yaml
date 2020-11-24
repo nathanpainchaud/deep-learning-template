@@ -1,7 +1,7 @@
 # @package _group_
 
 model:
-  _target_: deep_learning_tutorials.models.autoencoder.FullyConnectedAutoencoder
+  _target_: deep_learning_template.models.autoencoder.FullyConnectedAutoencoder
   num_latent_dims: 2
   hidden_layers: [ 784 ]
   bn:
@@ -12,4 +12,4 @@ model:
     _target_: torch.nn.Dropout
 
 authorized_tasks:
-  - _target_: deep_learning_tutorials.tasks.representation_learning.PixelWiseAutoencodingTask
+  - _target_: deep_learning_template.tasks.representation_learning.PixelWiseAutoencodingTask

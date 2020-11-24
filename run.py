@@ -6,9 +6,9 @@ import pytorch_lightning as pl
 from hydra.utils import instantiate
 from omegaconf import DictConfig, OmegaConf
 
-from deep_learning_tutorials import BaseDataModule, BaseTask
-from deep_learning_tutorials.core import initialization as init
-from deep_learning_tutorials.utils.config import freeze_config
+from deep_learning_template import BaseDataModule, BaseTask
+from deep_learning_template.core import initialization as init
+from deep_learning_template.utils.config import freeze_config
 
 os.environ["HYDRA_FULL_ERROR"] = "1"
 

@@ -3,8 +3,8 @@ from typing import Dict
 
 from torch import Tensor
 
-from deep_learning_tutorials import BaseTask
-from deep_learning_tutorials.utils.format.native import prefix
+from deep_learning_template import BaseTask
+from deep_learning_template.utils.format.native import prefix
 
 
 class TrainValTask(BaseTask, ABC):

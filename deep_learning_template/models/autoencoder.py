@@ -2,8 +2,8 @@ from typing import Any, Dict, Mapping, Sequence, Tuple, Union
 
 from torch import nn
 
-from deep_learning_tutorials import BaseModel
-from deep_learning_tutorials.models.mlp import MultiLayerPerceptron
+from deep_learning_template import BaseModel
+from deep_learning_template.models.mlp import MultiLayerPerceptron
 
 
 class FullyConnectedAutoencoder(BaseModel):

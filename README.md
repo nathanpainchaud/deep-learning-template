@@ -1,4 +1,4 @@
-# Deep Learning Tutorials with Lightning and Hydra
+# Deep Learning Project Template for Lightning and Hydra
 
 ## Setup
 If you already have a python environment and have [`poetry`](https://python-poetry.org) installed, you can skip ahead
@@ -10,7 +10,7 @@ If you don't operate inside a virtual environment, or only have access to an inc
 recommended you create a virtual environment using [`conda`](https://docs.conda.io/en/latest/):
 ```shell script
 conda env create -f environment.yml
-conda activate deep-learning-tutorials
+conda activate deep-learning-template
 ```
 
 ### Installing Dependencies
@@ -28,13 +28,13 @@ python run.py task=TASK model=MODEL datamodule=DATAMODULE
 - `model` str: Model configuration to use for the run.
 - `datamodule` str: Datamodule configuration to use for the run.
 
-Once you've provided the required parameters described above, you can see detailed help to change any other aspect of
-the configuration by running:
+Once you've provided the required parameters described above, you can see detailed help on how to customize any other
+aspect of the configuration by running:
 ```shell script
 python run.py task=TASK model=MODEL datamodule=DATAMODULE --help
 ```
 
-## Basic Tutorial Command
+## Basic Example Command
 ```shell script
 python run.py task=pixel_wise_autoencoding model=simple_ae datamodule=mnist
 ```

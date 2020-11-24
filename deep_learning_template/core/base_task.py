@@ -6,7 +6,7 @@ from omegaconf import DictConfig
 from pytorch_lightning import LightningModule
 from torch import nn
 
-from deep_learning_tutorials.utils.config import freeze_config, unfreeze_config
+from deep_learning_template.utils.config import freeze_config, unfreeze_config
 
 
 class BaseTask(LightningModule, ABC):

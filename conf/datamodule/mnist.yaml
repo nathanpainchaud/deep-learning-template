@@ -1,8 +1,8 @@
 # @package _group_
 
 datamodule:
-  _target_: deep_learning_tutorials.datamodules.mnist.MNISTDataModule
+  _target_: deep_learning_template.datamodules.mnist.MNISTDataModule
   normalize: True
 
 authorized_tasks:
-  - _target_: deep_learning_tutorials.tasks.representation_learning.PixelWiseAutoencodingTask
+  - _target_: deep_learning_template.tasks.representation_learning.PixelWiseAutoencodingTask

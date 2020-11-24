@@ -5,7 +5,7 @@ from omegaconf import DictConfig
 from pytorch_lightning.core.decorators import auto_move_data
 from torch import Tensor, nn
 
-from deep_learning_tutorials.tasks.generic import TrainValTask
+from deep_learning_template.tasks.generic import TrainValTask
 
 
 class PixelWiseAutoencodingTask(TrainValTask):

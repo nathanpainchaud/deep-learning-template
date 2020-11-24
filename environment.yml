@@ -1,4 +1,4 @@
-name: deep-learning-tutorials
+name: deep-learning-template
 channels:
   - conda-forge
   - defaults

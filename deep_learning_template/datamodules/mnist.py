@@ -2,7 +2,7 @@ from typing import Any, Dict
 
 from pl_bolts.datamodules import mnist_datamodule
 
-from deep_learning_tutorials import BaseDataModule
+from deep_learning_template import BaseDataModule
 
 
 class MNISTDataModule(mnist_datamodule.MNISTDataModule, BaseDataModule):

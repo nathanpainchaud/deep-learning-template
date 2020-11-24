@@ -1,13 +1,13 @@
 [tool.poetry]
-name = "deep-learning-tutorials"
+name = "deep-learning-template"
 version = "0.1.0"
-description = "Simple Deep Learning Tutorials using PyTorch Lightning and Hydra"
+description = "Deep Learning Project Template for Lightning and Hydra"
 authors = ["Nathan Painchaud <nathan.painchaud@gmail.com>"]
 license = "MIT"
 
 readme = 'README.md'
 
-repository = "https://github.com/nathanpainchaud/deep-learning-tutorials"
+repository = "https://github.com/nathanpainchaud/deep-learning-template"
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -38,4 +38,4 @@ exclude = "(.eggs|.git|.hg|.mypy_cache|.nox|.tox|.venv|.svn|_build|buck-out|buil
 [tool.isort]
 profile = "black"
 line_length = 120
-src_paths = ["deep_learning_tutorials"]
+src_paths = ["deep_learning_template"]

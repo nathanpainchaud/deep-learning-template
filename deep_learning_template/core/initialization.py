@@ -7,7 +7,7 @@ from pytorch_lightning import LightningDataModule
 from pytorch_lightning.utilities.exceptions import MisconfigurationException
 from torch import nn
 
-from deep_learning_tutorials import BaseDataModule, BaseModel, BaseTask
+from deep_learning_template import BaseDataModule, BaseModel, BaseTask
 
 
 def validate_cfg(cfg: DictConfig) -> None:

@@ -6,7 +6,7 @@ import torch
 from omegaconf import DictConfig
 from torch import Tensor, nn
 
-from deep_learning_tutorials.models.layers import bn_activation_dropout_block
+from deep_learning_template.models.layers import bn_activation_dropout_block
 
 
 class MultiLayerPerceptron(nn.Module):
