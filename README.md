@@ -1,5 +1,10 @@
 # Deep Learning Project Template for Lightning and Hydra
 
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/nathanpainchaud/deep-learning-template/blob/develop/LICENSE)
+[![CI: pre-commit](https://github.com/nathanpainchaud/deep-learning-template/actions/workflows/pre-commit.yml/badge.svg)](https://github.com/nathanpainchaud/deep-learning-template/actions?query=workflow%3A%22pre-commit%22)
+
 ## Setup
 If you already have a python environment and have [`poetry`](https://python-poetry.org) installed, you can skip ahead
 to the [Installing Dependencies](#installing-dependencies) section. Otherwise, it is recommended to first go through the
