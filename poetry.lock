@@ -418,6 +418,26 @@ format = ["idna", "jsonpointer (>1.13)", "rfc3987", "strict-rfc3339", "webcolors
 format_nongpl = ["idna", "jsonpointer (>1.13)", "webcolors", "rfc3986-validator (>0.1.0)", "rfc3339-validator"]
 
 [[package]]
+name = "lightning-bolts"
+version = "0.3.2"
+description = "PyTorch Lightning Bolts is a community contribution for ML researchers."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+pytorch-lightning = ">=1.1.1"
+torch = ">=1.6"
+torchmetrics = ">=0.2.0"
+
+[package.extras]
+dev = ["torchvision (>=0.7)", "scikit-learn (>=0.23)", "pillow", "opencv-python-headless", "gym (>=0.17.2)", "matplotlib", "wandb", "scipy", "codecov (>=2.1)", "pytest (>=6.0)", "pytest-cov (>2.10)", "flake8", "check-manifest", "twine (>=3.2)", "isort (>=5.6.4)", "pre-commit (>=1.0)", "mypy (>=0.790)", "yapf (>=0.29.0)", "atari-py (==0.2.6)"]
+extra = ["torchvision (>=0.7)", "scikit-learn (>=0.23)", "pillow", "opencv-python-headless", "gym (>=0.17.2)", "matplotlib", "wandb", "scipy"]
+loggers = ["matplotlib", "wandb", "scipy"]
+models = ["torchvision (>=0.7)", "scikit-learn (>=0.23)", "pillow", "opencv-python-headless", "gym (>=0.17.2)"]
+test = ["codecov (>=2.1)", "pytest (>=6.0)", "pytest-cov (>2.10)", "flake8", "check-manifest", "twine (>=3.2)", "isort (>=5.6.4)", "pre-commit (>=1.0)", "mypy (>=0.790)", "yapf (>=0.29.0)", "atari-py (==0.2.6)", "scikit-learn (>=0.23)"]
+
+[[package]]
 name = "markdown"
 version = "3.3.4"
 description = "Python implementation of Markdown."
@@ -684,25 +704,6 @@ examples = ["torchvision (>=0.5)", "gym (>=0.17.0)"]
 extra = ["matplotlib (>3.1)", "horovod (>=0.21.2)", "omegaconf (>=2.0.1)", "torchtext (>=0.5)", "onnxruntime (>=1.3.0)", "hydra-core (>=1.0)"]
 loggers = ["neptune-client (>=0.4.109)", "comet-ml (>=3.1.12)", "mlflow (>=1.0.0)", "test-tube (>=0.7.5)", "wandb (>=0.8.21)"]
 test = ["coverage (>=5.2)", "codecov (>=2.1)", "pytest (>=6.0)", "flake8 (>=3.6)", "check-manifest", "twine (==3.2)", "scikit-learn (>=0.22.2)", "scikit-image (>=0.17.2)", "isort (>=5.6.4)", "mypy (>=0.720,<0.800)", "pre-commit (>=1.0)", "cloudpickle (>=1.3)", "nltk (>=3.3)", "pandas"]
-
-[[package]]
-name = "pytorch-lightning-bolts"
-version = "0.3.0"
-description = "PyTorch Lightning Bolts is a community contribution for ML researchers."
-category = "main"
-optional = false
-python-versions = ">=3.6"
-
-[package.dependencies]
-pytorch-lightning = ">=1.1.1"
-torch = ">=1.6"
-
-[package.extras]
-dev = ["torchvision (>=0.7)", "scikit-learn (>=0.23)", "pillow", "opencv-python", "gym (>=0.17.2)", "matplotlib", "wandb", "scipy", "coverage (>=5.0)", "codecov (>=2.1)", "pytest (>=6.0)", "pytest-cov", "pytest-flake8", "flake8 (>=3.6)", "flake8-black", "check-manifest", "twine (==1.13.0)", "isort (>=5.6.4)", "pre-commit (>=1.0)", "mypy", "yapf", "atari-py (==0.2.6)"]
-extra = ["torchvision (>=0.7)", "scikit-learn (>=0.23)", "pillow", "opencv-python", "gym (>=0.17.2)", "matplotlib", "wandb", "scipy"]
-loggers = ["matplotlib", "wandb", "scipy"]
-models = ["torchvision (>=0.7)", "scikit-learn (>=0.23)", "pillow", "opencv-python", "gym (>=0.17.2)"]
-test = ["coverage (>=5.0)", "codecov (>=2.1)", "pytest (>=6.0)", "pytest-cov", "pytest-flake8", "flake8 (>=3.6)", "flake8-black", "check-manifest", "twine (==1.13.0)", "isort (>=5.6.4)", "pre-commit (>=1.0)", "mypy", "yapf", "atari-py (==0.2.6)", "scikit-learn (>=0.23)"]
 
 [[package]]
 name = "pyyaml"
@@ -984,7 +985,7 @@ comet = ["comet-ml"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "045e29900c9a0f361ca1ce9c52f7c2255a83f723dc6d256f72b56ee027c92a0b"
+content-hash = "a2b74dfd18952cd2d00bd38e4f7643249b1b0062a1e8035b7fe3eefa47dc827a"
 
 [metadata.files]
 absl-py = [
@@ -1217,6 +1218,10 @@ jsonschema = [
     {file = "jsonschema-3.2.0-py2.py3-none-any.whl", hash = "sha256:4e5b3cf8216f577bee9ce139cbe72eca3ea4f292ec60928ff24758ce626cd163"},
     {file = "jsonschema-3.2.0.tar.gz", hash = "sha256:c8a85b28d377cc7737e46e2d9f2b4f44ee3c0e1deac6bf46ddefc7187d30797a"},
 ]
+lightning-bolts = [
+    {file = "lightning-bolts-0.3.2.tar.gz", hash = "sha256:da2fe34d7515779f9487ab348212a46a61937ffb0a4492be600cb15b908e5a41"},
+    {file = "lightning_bolts-0.3.2-py3-none-any.whl", hash = "sha256:0f6365903c7366c02d4aa35f8b3c485c4255f9d43a1bfb0dbb6b106728c5d9b2"},
+]
 markdown = [
     {file = "Markdown-3.3.4-py3-none-any.whl", hash = "sha256:96c3ba1261de2f7547b46a00ea8463832c921d3f9d6aba3f255a6f71386db20c"},
     {file = "Markdown-3.3.4.tar.gz", hash = "sha256:31b5b491868dcc87d6c24b7e3d19a0d730d59d3e46f4eea6430a321bed387a49"},
@@ -1437,10 +1442,6 @@ pytest = [
 pytorch-lightning = [
     {file = "pytorch-lightning-1.2.6.tar.gz", hash = "sha256:3db92cf30165fb04b9ebd466eca906818a46e326484ff83e1f53237cfc097dff"},
     {file = "pytorch_lightning-1.2.6-py3-none-any.whl", hash = "sha256:73f43ace6cb3a12f1df7c978e8277b80c8e2f409da5be9aecb98bb0206068a96"},
-]
-pytorch-lightning-bolts = [
-    {file = "pytorch-lightning-bolts-0.3.0.tar.gz", hash = "sha256:6fc20f419d446043f7b6974934abb33aad7aeaec6a5f6844107f4ac21be10d4a"},
-    {file = "pytorch_lightning_bolts-0.3.0-py3-none-any.whl", hash = "sha256:509035bb7f2c242a7d88e1ad366184a8b439703a577b8d0a9996ba284af3b1d5"},
 ]
 pyyaml = [
     {file = "PyYAML-5.3.1-cp27-cp27m-win32.whl", hash = "sha256:74809a57b329d6cc0fdccee6318f44b9b8649961fa73144a98735b0aaf029f1f"},

@@ -1,11 +1,11 @@
 from typing import Any, Dict
 
-from pl_bolts.datamodules import mnist_datamodule
+from pl_bolts.datamodules import MNISTDataModule as pl_MNISTDataModule
 
 from deep_learning_template import BaseDataModule
 
 
-class MNISTDataModule(mnist_datamodule.MNISTDataModule, BaseDataModule):
+class MNISTDataModule(pl_MNISTDataModule, BaseDataModule):
     """Wrapper around the MNIST datamodule provided by Bolts that conforms to our project's datamodule API."""
 
     @property
