@@ -19,4 +19,4 @@ def prefix(map: StrMappingT, prefix: str, exclude: Union[str, Sequence[str]] = N
     elif isinstance(exclude, str):
         exclude = [exclude]
 
-    return map.__class__({f"{prefix}{k}" if k not in exclude else k: v for k, v in map.items()})
+    return map.__class__(**{f"{prefix}{k}" if k not in exclude else k: v for k, v in map.items()})  # type: ignore

@@ -27,7 +27,7 @@ class PixelWiseAutoencodingTask(TrainValTask):
             x = self.decoder(x)
         return x
 
-    def train_val_step(self, batch: Tensor, batch_idx: int) -> Dict[str, Tensor]:  # noqa: D102
+    def train_val_step(self, batch: Tensor, batch_idx: int) -> Dict[str, Tensor]:  # type: ignore # noqa: D102
         # Unpack input
         x, _ = batch
 
