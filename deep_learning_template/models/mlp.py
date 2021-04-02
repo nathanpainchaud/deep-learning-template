@@ -20,8 +20,8 @@ class MultiLayerPerceptron(nn.Module):
         activation: DictConfig,
         bn: DictConfig = None,
         dropout: DictConfig = None,
-    ):  # noqa: D205,D212,D415
-        """
+    ):
+        """# noqa: D205,D212,D415
         Args:
             in_shape: Shape of the network's input. If this is not 1-dimensional, the input will be automatically
                 flattened at the start of the forward pass.

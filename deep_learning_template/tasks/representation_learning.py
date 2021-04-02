@@ -18,9 +18,9 @@ class PixelWiseAutoencodingTask(TrainValTask):
         self.loss = instantiate(loss)
 
     @auto_move_data
-    def forward(
+    def forward(  # noqa: D102
         self, x: Tensor, task: Literal["encode", "decode", "reconstruct"] = "reconstruct"
-    ) -> Tensor:  # noqa: D102
+    ) -> Tensor:
         if task in ["encode", "reconstruct"]:
             x = self.encoder(x)
         if task in ["decode", "reconstruct"]:
