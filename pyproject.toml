@@ -25,6 +25,7 @@ isort = "^5.8.0"
 black = "^21.5b1"
 flake8 = "^3.9.2"
 flake8-docstrings = "^1.6.0"
+mypy = "^0.812"
 
 [tool.poetry.extras]
 comet = ["comet-ml"]
