@@ -13,7 +13,8 @@ class BaseTask(LightningModule, ABC):
     """Abstract base class for a task, that performs generic setup based on the config."""
 
     def __init__(self, cfg: DictConfig, data_params: Mapping[str, Any]):
-        """# noqa: D205,D212,D415
+        """Initializes class instance.
+
         Args:
             cfg: Application configuration.
             data_params: Hyper-parameters provided by the datamodule.

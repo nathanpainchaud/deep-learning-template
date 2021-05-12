@@ -10,7 +10,8 @@ class BaseModel(nn.Module, ABC):
     """Abstract base class for a model, that defines the interface to implement to work with tasks."""
 
     def __init__(self, data_params: Mapping[str, Any], required_data_attrs: Sequence[Tuple[str, Type]] = None):
-        """# noqa: D205,D212,D415
+        """Initializes class instance.
+
         Args:
             data_params: Hyper-parameters provided by the datamodule.
             required_data_attrs: Hyper-parameters (w/ their types) that should be provided by the datamodule for the
